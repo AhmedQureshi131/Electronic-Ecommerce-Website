@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Electronics Store</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link href="Cs/Style.css" rel="stylesheet"/>
+    <script src="js/jquery-3.2.1.min.js"></script>
+
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Lobster+Two|Pacifico&display=swap');
+</style>
+</head>
+<body>
+<section>
+  <!-- This is Section Part1 -->
+   <div class="section1">
+     <img src = "Images/Website_Logo.png" class="logo" />
+     <div class="navigation">
+       <img src="Images/if_List_Text_Menu_Numbers_String_Burger_1329080.png" class="toggle"/>
+       <a class="cgr">Categories</a>
+
+     </div>
+     <div>
+       <a class="submenu">Sound devices</a>
+        <a class="submenu">Video game consoles</a>
+         <a class="submenu">Cell/Mobile/Wireless phones</a>
+          <a class="submenu">Home security system</a>
+           <a class="submenu">Home theater system</a>
+            <a class="submenu">TVs</a>
+             <a class="submenu">Computers</a>
+              <a class="submenu">Games/Movies/Music</a>
+               <a class="submenu">Accessories</a>
+                <a class="submenu">Office</a>
+                 <a class="submenu">Home appliances</a>
+
+     </div>
+   </div>
+   <!-- This is Section Part1 -->
+   <div class="section2">
+    <input type="text" placeholder="search" class="txtsrch" /><button type="button" class="btnsearch">Search</button>
+    <img src="Images/if_call_322424.png" class="call-icon"/>
+    <span class="tel-no">+1(660)-(238)-(2594)</span>
+
+    <nav>
+     <a class="menuitem">Home</a>
+     <a class="menuitem">Wish List(0)</a>
+     <a class="menuitem">My Account</a>
+     <a class="menuitem">Shopping Cart</a>
+     <a class="menuitem">Checkout</a>
+     <a class="menuitem">Items(s)</a>
+    </nav>
+    <div class="slider">
+      <div class="slides">
+        <div class="slide1">
+            <img src="Images/img3.jpg" class="img1"/>
+
+        </div>
+        <div class="slide1">
+         <img src="Images/img9.jpg" class="img2"/>
+        </div>
+        <div class="slide1">
+         <img src="Images/img1.jpg" class="img3"/>
+        </div>
+        <div class="constant">
+         <h1>iphone 11 Pro</h1>
+         <p>Comfort is a very important things nowadays because it is a condition of satisfication.</p>
+
+         <a class="btnshopnow">Shop Now!</a>
+        </div>
+      </div>
+
+    </div>
+     <div class="content1">
+      <div class="innertitle1">
+         <h3>Home Theater & TV</h3>
+         <p class="para1">Comfort is a very important things nowadays because it is a condition of satisfication.</p>
+         <br/>
+         <p class="para1"> Shop Now!</p>
+      </div>
+      <div class="innertitle2">
+        <h3> Home Application</h3>
+        <p class="para2">Comfort is a very important things nowadays because it is a condition of satisfication.</p>
+        <br/>
+        <p class="para1"> Shop Now!</p>
+      </div>
+      <div class="inner1">
+        <img src="Images/Home_Theaters.png" class="img1">
+
+      </div>
+      <div class="inner2">
+          <img src="Images/Black_Vacuum_cleaner_PNG_Clipart-629.png" class="img2">
+
+      </div>
+     </div>
+
+    <p class="featuredpara"> Latest </p>
+    <div class="products">
+      <fieldset class="col1">
+         <legend>New</legend>
+         <img src="Images/Laptop.png" class="img1">
+         <h3>$184.78<strike>$192.45</stike></h3>
+           <h4> Apply MacBook Pro 13-inch Laptop (Intel Dual-core i5 2.4 GHz, 4 GB RAM, 500 GB HDD, Intel HD, OS X) -Silver -2011</h4>
+           <p>Fastest dual-core processor available Thunderbolt technology FaceTime HD camera Long lasting battery... </p>
+
+      </fieldset>
+      <fieldset class="col2">
+        <legend>New</legend>
+        <img src="Images/Canon_Camera.png" class="img1">
+        <h3>$636.21<strike>$642.45</strike></h3>
+        <h4>Canon EOS 200D Digital SLR Camera with EF-S 18 - 55 mm f/4-5.6 IS </h4>
+        <p>24.2 megapixel CMOS sensor for photos rich with detail and color and look straight from the camera. Continuous shooting at up to 5 FTP </p>
+      </fieldset>
+
+      <fieldset class="col3">
+        <legend>New</legend>
+        <img src="Images/38_Printers.png" class="img1">
+        <h3>$49.41<strike>$50.31</strike> </h3>
+        <h4>HP Envy 4527 All-in-one Printer, Instant Ink Compatible with 4 Months Trial  </h4>
+        <p>Print, scan or copy quickly and easily with the 2.2 inch (5.5 cm) display -simply touch and go... </p>
+
+      </fieldset>
+    </div>
+
+   </div>
+
+
+
+</section>
+<script>
+
+   var $slides = $('.slides');
+   var $slide = $('.slide1');
+   var count = 1;
+
+   $(document).ready(function(){
+     setInterval(function(){
+
+       $slides.animate({'margin-left':'-=68vw'}, 1200, function(){
+
+         count++;
+         if(count===4){
+           $slides.css("margin-left",0);
+           count = 1;
+         }
+
+       });
+
+     }, 4000);
+   });
+
+</script>
+</body>
+</html>
